@@ -1,0 +1,24 @@
+@import 'Dolbal';
+.navigate{
+	@include clear;
+	width:100%;
+	background: #000;
+	.navigate-box{
+		@include auto;
+		width:1090px;
+		a{
+			color : #999999;
+		}
+		.left li{
+				@include left;
+				margin :5px  10px ;	
+		}
+		.right{
+			@include right;
+			li{
+				@include left;
+				margin :5px  10px;
+			}
+		}
+	}
+}

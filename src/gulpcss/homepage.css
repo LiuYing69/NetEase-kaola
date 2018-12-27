@@ -1,0 +1,35 @@
+body, html, ul, li, span {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  display: block; }
+
+body, html {
+  width: 100%;
+  font-size: 12px; }
+
+.navigate {
+  float: none;
+  overflow: hidden;
+  width: 100%;
+  background: #000; }
+  .navigate .navigate-box {
+    margin: 0 auto;
+    width: 1090px; }
+    .navigate .navigate-box a {
+      color: #999999; }
+    .navigate .navigate-box .left li {
+      float: left;
+      margin: 5px  10px; }
+    .navigate .navigate-box .right {
+      float: right; }
+      .navigate .navigate-box .right li {
+        float: left;
+        margin: 5px  10px; }
