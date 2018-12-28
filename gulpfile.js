@@ -19,8 +19,16 @@ gulp.task('img',()=>{
 	.pipe(rename({"suffix":""}))
 	.pipe(gulp.dest('./src/gulpimg'))
 })
+gulp.task("js",()=>{
+	gulp.src('./src/js/*.js')
+	.pipe(concat('min.js'))
+	.pipe(uglify())
+	//.pipe(rename({"suffix":".js"}))
+	.pipe(gulp.dest('./src/gulpjs'))
+})
 gulp.task('default',()=>{
 	gulp.watch('./src/sass/*.scss',['sass'])
 	gulp.watch('./src/img/img/*.*',['img'])
+	gulp.watch('./src/js/*.js',['js'])
 })
 

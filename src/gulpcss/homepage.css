@@ -1,4 +1,4 @@
-body, html, ul, li, span {
+body, html, ul, li, span, i {
   padding: 0;
   margin: 0; }
 
@@ -26,24 +26,24 @@ body, html {
       color: #999999; }
     .navigate .navigate-box .left li {
       float: left;
-      margin: 5px  10px; }
+      margin: 5px 25px  5px  0; }
     .navigate .navigate-box .right {
       float: right; }
       .navigate .navigate-box .right li {
         float: left;
-        margin: 5px  10px; }
+        margin: 5px 25px 5px 0; }
 
 .logo-search {
   width: 100%;
-  overflow: hidden; }
+  height: auto; }
   .logo-search .search-box {
     width: 1090px;
-    overflow: hidden;
+    height: auto;
     margin: 0 auto; }
     .logo-search .search-box a {
       float: left; }
       .logo-search .search-box a img {
-        margin: 22px 70px 0  10px; }
+        margin: 22px 137px 16px  10px; }
     .logo-search .search-box .search {
       float: left;
       width: 510px;
@@ -67,7 +67,7 @@ body, html {
       .logo-search .search-box .search ul {
         position: absolute;
         left: 10px;
-        top: 50px; }
+        top: 47px; }
         .logo-search .search-box .search ul li {
           float: left;
           margin: 0  16px; }
@@ -86,3 +86,52 @@ body, html {
       color: #333;
       background: url(../gulpimg/cart.png) no-repeat 18px center;
       margin: 25px 0 0 70px; }
+    .logo-search .search-box .meau-bar {
+      clear: both;
+      width: 100%;
+      height: 40px;
+      line-height: 40px; }
+      .logo-search .search-box .meau-bar li {
+        float: left;
+        margin-left: 44px; }
+        .logo-search .search-box .meau-bar li a {
+          color: #3b3841;
+          font-size: 14px;
+          font-weight: bold; }
+      .logo-search .search-box .meau-bar .first-li, .logo-search .search-box .meau-bar .first-li .two-meau li {
+        font-size: 14px;
+        margin-left: 12px;
+        width: 165px;
+        height: 100%;
+        background: linear-gradient(to left, #fe3061 20%, #ff0a11);
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        left: 0;
+        top: 0; }
+        .logo-search .search-box .meau-bar .first-li div, .logo-search .search-box .meau-bar .first-li .two-meau li div {
+          position: absolute;
+          left: 15px;
+          top: 15px; }
+          .logo-search .search-box .meau-bar .first-li div i, .logo-search .search-box .meau-bar .first-li .two-meau li div i {
+            display: block;
+            width: 15px;
+            height: 2px;
+            background: #fff;
+            margin-bottom: 3px; }
+        .logo-search .search-box .meau-bar .first-li .two-meau, .logo-search .search-box .meau-bar .first-li .two-meau li .two-meau {
+          position: absolute;
+          left: -12px;
+          top: 40px; }
+          .logo-search .search-box .meau-bar .first-li .two-meau li {
+            clear: both; }
+            .logo-search .search-box .meau-bar .first-li .two-meau li a {
+              display: block;
+              margin-left: 3px;
+              width: 160px;
+              text-align: center;
+              color: #fff;
+              border-bottom: 1px solid #ff515d; }
+          .logo-search .search-box .meau-bar .first-li .two-meau li:first-child a {
+            border-top: 1px solid #ff515d; }
