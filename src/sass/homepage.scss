@@ -1,24 +1,86 @@
+//引用工具箱
 @import 'Dolbal';
+//navigate   css 样式
 .navigate{
-	@include clear;
+	overflow:hidden;
 	width:100%;
 	background: #000;
 	.navigate-box{
-		@include auto;
+		margin:0 auto;
 		width:1090px;
 		a{
 			color : #999999;
 		}
 		.left li{
-				@include left;
+				float:left;
 				margin :5px  10px ;	
 		}
 		.right{
-			@include right;
+			float:right;
 			li{
-				@include left;
+				float:left;
 				margin :5px  10px;
 			}
 		}
 	}
 }
+// header  css  LOGO search  cart 样式 
+.logo-search{
+	width: 100%;
+	overflow:hidden;
+	.search-box{
+		width: 1090px;
+		overflow: hidden;
+		margin:0 auto;
+		a{
+			float:left;
+			img{
+				margin:22px 70px 0  10px;
+			}
+		}
+		.search{
+			float:left;
+			width: 510px;
+			height: 40px;
+			border: 2px solid #ff1e40;
+			border-radius:30px;
+			@include position(relative);
+			margin-top:25px;
+			span{
+				display: block;
+				width:60px;
+				height: 44px;
+				background: #ff1e40 url(../gulpimg/loupe.png)  no-repeat center;
+				border-radius:30px;
+				float:right;
+				@include position(absolute,460px,-2px);
+			}
+			ul{
+				@include position(absolute,10px,50px);		
+				li{
+					float:left;
+					margin:0  16px;
+					a{
+						color:#9795a0;	
+					}
+				}
+				li:hover a{
+					color: #ff1e35;
+				}
+			}
+		}
+		.shopping-cart{
+			width:60px;
+			height:40px;
+			border: 2px solid #FF1E40;
+			border-radius:30px;
+			line-height:40px;
+			float:left;
+			padding-left:50px;
+			color:#333;
+			background:url(../gulpimg/cart.png) no-repeat 18px center;
+			margin:25px 0 0 70px;
+		}
+	} 
+}
+//head 一级菜单和二级菜单

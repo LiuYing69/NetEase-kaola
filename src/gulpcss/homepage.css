@@ -16,7 +16,6 @@ body, html {
   font-size: 12px; }
 
 .navigate {
-  float: none;
   overflow: hidden;
   width: 100%;
   background: #000; }
@@ -33,3 +32,57 @@ body, html {
       .navigate .navigate-box .right li {
         float: left;
         margin: 5px  10px; }
+
+.logo-search {
+  width: 100%;
+  overflow: hidden; }
+  .logo-search .search-box {
+    width: 1090px;
+    overflow: hidden;
+    margin: 0 auto; }
+    .logo-search .search-box a {
+      float: left; }
+      .logo-search .search-box a img {
+        margin: 22px 70px 0  10px; }
+    .logo-search .search-box .search {
+      float: left;
+      width: 510px;
+      height: 40px;
+      border: 2px solid #ff1e40;
+      border-radius: 30px;
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-top: 25px; }
+      .logo-search .search-box .search span {
+        display: block;
+        width: 60px;
+        height: 44px;
+        background: #ff1e40 url(../gulpimg/loupe.png) no-repeat center;
+        border-radius: 30px;
+        float: right;
+        position: absolute;
+        left: 460px;
+        top: -2px; }
+      .logo-search .search-box .search ul {
+        position: absolute;
+        left: 10px;
+        top: 50px; }
+        .logo-search .search-box .search ul li {
+          float: left;
+          margin: 0  16px; }
+          .logo-search .search-box .search ul li a {
+            color: #9795a0; }
+        .logo-search .search-box .search ul li:hover a {
+          color: #ff1e35; }
+    .logo-search .search-box .shopping-cart {
+      width: 60px;
+      height: 40px;
+      border: 2px solid #FF1E40;
+      border-radius: 30px;
+      line-height: 40px;
+      float: left;
+      padding-left: 50px;
+      color: #333;
+      background: url(../gulpimg/cart.png) no-repeat 18px center;
+      margin: 25px 0 0 70px; }
