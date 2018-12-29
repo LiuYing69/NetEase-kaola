@@ -10,7 +10,7 @@ require.config({
 require(['jquery','cookie','two-meau'],function($,cookie,two){
 	$(function(){
 		two.img("two-meau");
-		
+		two.json('../js/two-meau.json');
 	})
 	
 })
