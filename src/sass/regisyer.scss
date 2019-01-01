@@ -1,0 +1,20 @@
+//引用工具箱
+@import 'Dolbal';
+.top{
+	border-bottom:1px solid #e8e8ea;
+	width:100%;
+	padding:20px 135px 15px;
+}
+.center{
+	>img{
+		float: left;
+		margin:102px 0 0 146px;
+	}
+	>.box{
+		width: 350px;
+		height:535px;
+		border:1px solid #e8e8ea ;
+		float: right;
+	}
+	
+}

@@ -1,4 +1,4 @@
-body,html,ul,li,span,i,h3{
+body,html,ul,li,span,i,h3,p{
 	padding: 0;
 	margin : 0;
 }
@@ -34,4 +34,3 @@ body,html{
 @mixin auto{
 	margin : 0 auto;
 }
-	

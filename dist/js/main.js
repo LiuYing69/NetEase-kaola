@@ -9,8 +9,13 @@ require.config({
 //2.设置依赖
 require(['jquery','cookie','two-meau'],function($,cookie,two){
 	$(function(){
-		two.img("two-meau");
+		two.load("#top","_Dolbal.html");
+		two.img(".two-meau li a");
 		two.json('../js/two-meau.json');
+		two.jsonimg(7);
+		two.hover(".two-meau li",".two-meau-div")
+		two.hover(".first-li",".two-meau");
+		
 	})
 	
 })

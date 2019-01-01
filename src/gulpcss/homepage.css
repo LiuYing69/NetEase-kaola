@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html, ul, li, span, i, h3 {
   padding: 0;
   margin: 0; }
@@ -27,15 +28,16 @@ body, html {
     width: 1090px; }
     .navigate .navigate-box a {
       color: #999999; }
-    .navigate .navigate-box .left li {
+    .navigate .navigate-box .left > li {
       float: left;
       margin: 5px 25px  5px  0; }
     .navigate .navigate-box .right {
       float: right; }
-      .navigate .navigate-box .right li {
+      .navigate .navigate-box .right > li {
         float: left;
         margin: 5px 25px 5px 0; }
 
+/* header  css  LOGO search  cart 样式 */
 .logo-search {
   width: 100%;
   height: auto; }
@@ -43,9 +45,9 @@ body, html {
     width: 1090px;
     height: auto;
     margin: 0 auto; }
-    .logo-search .search-box a {
+    .logo-search .search-box > a {
       float: left; }
-      .logo-search .search-box a img {
+      .logo-search .search-box > a img {
         margin: 22px 137px 16px  10px; }
     .logo-search .search-box .search {
       float: left;
@@ -57,7 +59,7 @@ body, html {
       left: 0;
       top: 0;
       margin-top: 25px; }
-      .logo-search .search-box .search span {
+      .logo-search .search-box .search > span {
         display: block;
         width: 60px;
         height: 44px;
@@ -67,16 +69,16 @@ body, html {
         position: absolute;
         left: 460px;
         top: -2px; }
-      .logo-search .search-box .search ul {
+      .logo-search .search-box .search > ul {
         position: absolute;
         left: 10px;
         top: 47px; }
-        .logo-search .search-box .search ul li {
+        .logo-search .search-box .search > ul > li {
           float: left;
           margin: 0  16px; }
-          .logo-search .search-box .search ul li a {
+          .logo-search .search-box .search > ul > li a {
             color: #9795a0; }
-        .logo-search .search-box .search ul li:hover a {
+        .logo-search .search-box .search > ul > li:hover a {
           color: #ff1e35; }
     .logo-search .search-box .shopping-cart {
       width: 60px;
@@ -94,14 +96,14 @@ body, html {
       width: 100%;
       height: 40px;
       line-height: 40px; }
-      .logo-search .search-box .meau-bar li {
+      .logo-search .search-box .meau-bar > li {
         float: left;
         margin-left: 44px; }
-        .logo-search .search-box .meau-bar li a {
+        .logo-search .search-box .meau-bar > li a {
           color: #3b3841;
           font-size: 14px;
           font-weight: bold; }
-      .logo-search .search-box .meau-bar .first-li, .logo-search .search-box .meau-bar .first-li .two-meau li {
+      .logo-search .search-box .meau-bar .first-li {
         font-size: 14px;
         margin-left: 12px;
         width: 165px;
@@ -112,68 +114,107 @@ body, html {
         font-weight: bold;
         position: relative;
         left: 0;
-        top: 0; }
-        .logo-search .search-box .meau-bar .first-li div, .logo-search .search-box .meau-bar .first-li .two-meau li div {
+        top: 0;
+        /*head 一级菜单和二级菜单*/ }
+        .logo-search .search-box .meau-bar .first-li .thr-bor {
           position: absolute;
           left: 15px;
           top: 15px; }
-          .logo-search .search-box .meau-bar .first-li div i, .logo-search .search-box .meau-bar .first-li .two-meau li div i {
+          .logo-search .search-box .meau-bar .first-li .thr-bor i {
             display: block;
             width: 15px;
             height: 2px;
             background: #fff;
             margin-bottom: 3px; }
-        .logo-search .search-box .meau-bar .first-li .two-meau, .logo-search .search-box .meau-bar .first-li .two-meau li .two-meau {
+        .logo-search .search-box .meau-bar .first-li > .two-meau {
           position: absolute;
-          left: -12px;
-          top: 40px; }
-          .logo-search .search-box .meau-bar .first-li .two-meau li {
+          left: 0px;
+          top: 40px;
+          display: none; }
+          .logo-search .search-box .meau-bar .first-li > .two-meau > li {
+            font-size: 14px;
+            width: 165px;
+            height: 100%;
+            background: linear-gradient(to left, #fe3061 20%, #ff0a11);
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
             height: 46px;
             clear: both;
-            background: linear-gradient(to left, #fe3061 20%, #ff0a11); }
-            .logo-search .search-box .meau-bar .first-li .two-meau li a {
+            background: linear-gradient(to left, #fe3061 20%, #ff0a11);
+            /*二级菜单*/ }
+            .logo-search .search-box .meau-bar .first-li > .two-meau > li > a {
               display: block;
               width: 60px;
               margin-left: 2px;
               padding: 0  48px 0 54px;
               text-align: left;
               color: #fff;
-              border-bottom: 1px solid #ff515d; }
-              .logo-search .search-box .meau-bar .first-li .two-meau li a .lg {
+              border-bottom: 1px solid #ff515d;
+              position: relative;
+              left: 0;
+              top: 0; }
+              .logo-search .search-box .meau-bar .first-li > .two-meau > li > a > .lg {
                 font-size: 17px;
+                color: #000;
                 color: rgba(255, 255, 255, 0.3);
                 position: absolute;
                 left: 130px;
                 top: 0; }
-          .logo-search .search-box .meau-bar .first-li .two-meau li:first-child a {
+            .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div {
+              width: 930px;
+              height: 458px;
+              border: 1px solid #ff515d;
+              position: absolute;
+              left: 164px;
+              top: 0px;
+              padding-left: 15px;
+              display: none;
+              background: #f6f6f6; }
+              .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left {
+                width: 694px;
+                height: 100%;
+                float: left;
+                overflow: hidden; }
+                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul {
+                  width: 334px;
+                  float: left; }
+                  .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul .two-meau-div-left-ul-h3 {
+                    line-height: 35px;
+                    border-bottom: 1px solid #eaeaea;
+                    color: #333333;
+                    font-weight: bold;
+                    text-align: left;
+                    padding-left: 5px;
+                    width: 100%;
+                    font-size: 14px;
+                    float: left; }
+                  .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul .two-ul {
+                    width: 280px;
+                    height: 150px;
+                    overflow: hidden;
+                    padding-left: 6px; }
+                    .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul .two-ul > li {
+                      float: left;
+                      text-align: center;
+                      line-height: 50px;
+                      margin-left: 0;
+                      margin-right: 30px; }
+                      .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul .two-ul > li a {
+                        font-size: 12px;
+                        color: #666666; }
+              .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right {
+                width: 218px;
+                float: right;
+                margin: 9px 5px 0 11px; }
+                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right img {
+                  width: 104px;
+                  height: 104px;
+                  border: 1px solid #eaeaea;
+                  float: left;
+                  margin: 0  3px  2px 0; }
+                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right .png {
+                  width: 215px;
+                  margin-top: 15px; }
+          .logo-search .search-box .meau-bar .first-li > .two-meau > li:first-child > a {
             border-top: 1px solid #ff515d; }
-      .logo-search .search-box .meau-bar .two-meau-div {
-        width: 930px;
-        height: 460px;
-        border: 1px solid #ff515d;
-        position: absolute;
-        left: 264px;
-        top: 173px;
-        padding-left: 15px;
-        overflow: hidden; }
-        .logo-search .search-box .meau-bar .two-meau-div .two-meau-div-ul {
-          width: 334px;
-          float: left; }
-          .logo-search .search-box .meau-bar .two-meau-div .two-meau-div-ul .two-meau-div-ul-h3 {
-            width: 334px;
-            line-height: 35px;
-            border-bottom: 1px solid #eaeaea;
-            color: #333333;
-            text-align: left;
-            font-size: 14px;
-            float: left; }
-          .logo-search .search-box .meau-bar .two-meau-div .two-meau-div-ul .two-ul {
-            width: 334px;
-            height: 150px;
-            overflow: hidden;
-            padding-left: 15px; }
-            .logo-search .search-box .meau-bar .two-meau-div .two-meau-div-ul .two-ul li {
-              float: left;
-              text-align: center;
-              margin: 0 37px 0 0;
-              color: #666666; }
