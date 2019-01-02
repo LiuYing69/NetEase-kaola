@@ -5,7 +5,6 @@
 		<title></title>
 	</head>
 	<link rel="stylesheet" type="text/css" href="../../src/gulpcss/homepage.css"/>
-	<script src="../js/require.js" data-main='../js/main' defer async="true"></script>
 	<body>
 		<!-- navigage -->
 		<nav class='navigate'>
@@ -13,17 +12,65 @@
 				<ul class='left'>
 					<li><a href="#">考拉欢迎你！</a></li>
 					<li><a href="#">登录</a></li>
-					<li><a href="#">免费注册</a></li>
-					<li><a href="#">手机考拉</a></li>
+					<li><a href="register.html">免费注册</a></li>
+					<li class="code-li"><a href="#">手机考拉
+						<div class="code">
+							<img src="../../src/gulpimg/code.png" alt="">
+							<p>下载APP</p>
+							<p>领1000元新人礼包</p>
+						</div>
+					</a></li>
 				</ul>
 				<ul class='right'>
 					<li><a href="#">每日签到</a></li>
 					<li><a href="#">我的订单</a></li>
-					<li><a href="#">个人中心<span></span></a></li>
-					<li><a href="#">客户服务<span></span></a></li>
-					<li><a href="#">充值中心<span></span></a></li>
-					<li><a href="#">消费者权益<span></span></a></li>
-					<li><a href="#">更多<span></span></a></li>
+					<li class="man-li"><a href="#">个人中心<span></span></a>
+						<ul class="man">
+							<li><a href="">我的优惠券</a></li>
+							<li><a href="">我的红包</a></li>
+							<li><a href="">我的考拉豆</a></li>
+							<li class="bor"></li>
+							<li><a href="">账号管理</a></li>
+							<li><a href="">我的实名认证</a></li>
+							<li class="bor"></li>
+							<li><a href="">我收藏的商品</a></li>
+							<li><a href="">我关注的品牌</a></li>
+							<li class="bor"></li>
+							<li><a href="">售后管理</a></li>
+						</ul>	
+					</li>
+					<li class="man-li1"><a href="#">客户服务<span></span></a>
+						<ul class="man1">
+							<li><a href="">联系客服</a><div></div></li>
+							<li><a href="">帮助中心</a><div></div></li>
+						</ul>
+					</li>
+					<li class="man-li2"><a href="#">充值中心<span></span></a>
+						<ul class="man2">
+							<li><a href="">话费流量</a></li>
+							<li><a href="">游戏充值</a></li>
+							<li><a href="">AppStore充值卡</a></li>
+						</ul>
+					</li>
+					<li class="man-li3"><a href="#">消费者权益<span></span></a>
+						<ul class="man3">
+							<li><a href="">消费者告知书</a></li>
+							<li><a href="">消费投诉公示</a></li>
+						</ul>
+					</li>
+					<li class="man-li4"><a href="#">更多<span></span></a>
+						<ul class="man4">
+							<li><a href="">收藏本站</a></li>
+							<li class="bor"></li>
+							<li><a href="">新浪微博</a></li>
+							<li><a href="">微信公众号</a></li>
+							<li><a href="">易信公众号</a></li>
+							<li class="bor"></li>
+							<li><a href="">招商合作</a></li>
+							<li class="bor"></li>
+							<li><a href="">考拉招聘</a></li>
+						</ul>	
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -32,7 +79,8 @@
 			<div class="search-box">
 				<a href="#"><img src="../../src/gulpimg/logo.png"></a>
 				<div class="search">
-					<span></span>
+					<input type="type" nametype="" id="" value="" />
+					<a href=""><span></span></a>
 					<ul>
 						<li><a href="#">面膜</a></li>
 						<li><a href="">口红</a></li>
@@ -43,7 +91,7 @@
 						<li><a href="">女包</a></li>
 					</ul>
 				</div>
-				<div class="shopping-cart">购物车</div>
+				<div class="shopping-cart"><a href="">购物车</a></div>
 				<!-- 一级菜单栏 -->
 				<ul class="meau-bar">
 					<li class="first-li">
@@ -80,7 +128,98 @@
 				
 			</div>
 		</header>
-		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script>
+		function abc(){
+				return {
+					img : function(id){
+						var $oli=$(id);
+						var $lg=$("<span class='lg'>&gt;</span>");
+							$oli.append($lg);
+							$oli.each(function(i,n){
+								$(n).css({"background" : "url(../../src/gulpimg/two-"+(i+1)+".png) no-repeat 15px center " });
+							})
+						},
+					json : function(url){
+						var $div = $('<div class="two-meau-div"></div>');
+						var $divlt = $('<div class="two-meau-div-left"></div>');
+						var $divrt = $('<div class="two-meau-div-right"></div>');
+						$div.append($divlt,$divrt);
+						$('.two-meau li').append($div);
+						$.getJSON(url,function(data){
+								$(data).each(function(i,n){
+									for(var i in n){
+										var $ul = $('<ul class="two-meau-div-left-ul"></ul>')
+										var $h3 = $('<div class="two-meau-div-left-ul-h3">'+i+'</h3>');
+										var $ul2= $('<ul class="two-ul"></ul>');
+										$ul.append($h3);
+										$(n[i]).each(function(i,n){
+											var $str = JSON.stringify(n);
+											$str= $str.substring(1,$str.length-1);
+											var $oli = $('<li><a href="#">'+$str+'</a></li>');
+											$ul2.append($oli);
+											$ul.append($ul2);
+										})
+										$($('.two-meau-div-left')).append($ul);		
+									}
+								})
+								
+								
+						})
+					},
+					jsonimg : function(num){
+						for(let i=1; i < num ; i ++){
+							var $img =  $('<a href="#"><img src="../../src/gulpimg/ul-'+i+'.jpg"></a>');
+						$($('.two-meau-div-right')).append($img);
+							
+						}
+					},
+					hover: function(id,obj){
+						var $oli = $(id);
+						$oli.each(function(i,n){
+							$(n).hover(function(){
+								$(obj).css("display","block");
+							},function(){
+								$(obj).css("display","none");
+							})
+						})
+					},
+					load : function(index,url){
+						$(index).load(url,function(data){
+							console.log(data);
+						});
+					},
+					hover1: function(id,obj){
+						var $oli = $(id);
+						$oli.each(function(i,n){
+							$(n).hover(function(){
+								$(obj).css("display","block");
+								$(this).css({"background":"#fff","border":"1px solid #ccc","borderBottom":"0"});
+								$(id+'>a').css({"color":"#ff2438"});
+								$(id+' span').css({"transform":"rotate(180deg)","marginTop":"3px","borderColor":"#ff2438 transparent  transparent transparent","transtion":"3s"});
+							},function(){
+								$(obj).css("display","none");
+								$(this).css({"background":"","border":"","borderBottom":"0"});
+								$(id+'>a').css({"color":""})
+								$(id+' span').css({"transform":"","marginTop":"","borderColor":"","transtion":""});
+							})
+						})
+					}
+				}
+			}
+			var $fn = new abc();
+				$fn.img(".two-meau li a");
+				$fn.json('../js/two-meau.json');
+				$fn.jsonimg(8);
+				$fn.hover(".two-meau li",".two-meau-div")
+				$fn.hover(".first-li",".two-meau");
+				$fn.hover('.code-li',".code");
+				$fn.hover1('.man-li',".man");
+				$fn.hover1('.man-li1',".man1");
+				$fn.hover1('.man-li2',".man2");
+				$fn.hover1('.man-li3',".man3");
+				$fn.hover1('.man-li4',".man4");
+		</script>
 		
 	</body>
 </html>

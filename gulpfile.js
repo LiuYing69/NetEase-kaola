@@ -21,7 +21,7 @@ gulp.task('img',()=>{
 })
 gulp.task("js",()=>{
 	gulp.src('./src/js/*.js')
-	.pipe(concat('min.js'))
+	.pipe(rename({"suffix":""}))
 	.pipe(uglify())
 	//.pipe(rename({"suffix":".js"}))
 	.pipe(gulp.dest('./src/gulpjs'))

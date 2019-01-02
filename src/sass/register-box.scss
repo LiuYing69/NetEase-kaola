@@ -1,0 +1,167 @@
+//引用工具箱
+@import 'Dolbal';
+.box{
+		width: 350px;
+		
+		border:1px solid #e8e8ea ;
+		float: right;
+		margin:20px 170px 0 0; 
+		padding-top:17px;
+		>.box-top{
+			overflow: hidden;
+			border-bottom:1px solid #e8e8ea ;
+			
+			>h3{
+				line-height: 53px;
+				float: left;
+				color:#e3304e;
+				margin-left: 40px;
+				font-weight: bold;
+				font-size: 17px;
+			}
+			>p{
+				float: right;
+				line-height: 53px;
+				margin-right: 40px;
+				a{
+					color:#51b8f1;
+				}
+			}
+			
+		}
+		.rejingling{
+			@include position(relative);
+			input{
+				width: 230px;
+				height: 36px;
+				margin:40px 0 15px 40px;
+				padding-left:40px;
+				color:#666;
+			}
+			>span{
+				display:block;
+				width:20px;
+				height:20px;
+				background:url(../gulpimg/rejingling.png)  -33px -33px;
+				@include position(absolute,53px,50px);
+			}
+		}
+		.box-center{
+			width:270px;
+			margin:0 0 0 40px;
+			img{
+				width:100%;
+			}
+			span{
+				display:block;
+				width:268px;
+				height:40px;
+				text-align:center;
+				line-height:40px;
+				border:1px solid #d5d5d5;
+				background:#f7f9fa;
+				@include position(relative);
+				a{
+					display:block;
+					width:40px;
+					height:40px;
+					background:#fff;
+					@include position(absolute);
+					span{
+						display:block;
+						height:13px;
+						width:15px;
+						background: url(../gulpimg/regt.png) 1px -10px;
+						margin:13px 0 0 12px;
+						border:0;
+						
+					}
+				}
+			}
+		}
+		
+		.validate{
+			@include position(relative);
+			
+			input{		
+				width: 270px;
+				height: 36px;
+				margin:15px 0 15px 40px;
+				border:1px solid #d5d5d5;
+			}
+			>a{
+				display:block;
+				width:97px;
+				height:38px;
+				@include position(absolute,213px,16px);
+				border:1px solid  #d5d5d5;
+				border-width:0 1px; 
+				line-height:38px;
+				color:#333;
+				font-size:15px;
+				text-align:center;
+				background:#eeeeee;
+				
+			}
+		}
+		.rejingling2{
+			@include position(relative);
+			input{
+				width: 230px;
+				height: 36px;
+				margin:0 0 0 40px;
+				padding-left:40px;
+				color:#666;
+			}
+			>span{
+				display:block;
+				width:20px;
+				height:20px;
+				background:url(../gulpimg/rejingling.png)  -64px -33px;
+				@include position(absolute,53px,10px);
+			}
+		}
+		
+		>a{
+			display:block;
+			width: 270px;
+			height: 36px;
+			background:#e31436;
+			text-align:center;
+			margin:30px auto;
+			line-height:36px;
+			color:#fff;
+			@include position(relative);
+			
+			.clue{
+				width:270px;
+				height:30px;
+				display: none;
+				padding-left:20px;
+				text-align:left;
+				line-height:30px;
+				@include position(absolute,0,-30px);
+				span{
+					width:15px;
+					height:15px;
+					background:url(../../src/gulpimg/clue.png) -216px -33px;
+					display:block;
+					margin:7px 0 0 5px;
+					@include position(absolute);
+					
+				}
+			}
+		}
+		.chek{
+			float:left;
+			margin-left:40px;
+		}
+		>p{
+			line-height:17px;
+			color:#999999;
+			float:left;
+			margin-bottom:17px;
+		}
+		
+	}
+	

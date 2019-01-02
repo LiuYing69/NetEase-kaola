@@ -1,1 +1,0 @@
-var i=1;$(function(i){return $("."+i+"li")}),$(two-meau);

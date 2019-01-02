@@ -56,6 +56,25 @@ define(function(){
 		},
 		load : function(index,url){
 			$(index).load(url);
-		}	
+		},
+		hover1: function(id,obj){
+			var $oli = $(id);
+			$oli.each(function(i,n){
+				$(n).hover(function(){
+					$(obj).css("display","block");
+					$(this).css({"background":"#fff","border":"1px solid #ccc","borderBottom":"0"});
+					$(id+'>a').css({"color":"#ff2438"});
+					$(id+' span').css({"transform":"rotate(180deg)","marginTop":"3px","borderColor":"#ff2438 transparent  transparent transparent","transtion":"3s"});
+				},function(){
+					$(obj).css("display","none");
+					$(this).css({"background":"","border":"","borderBottom":"0"});
+					$(id+'>a').css({"color":""})
+					$(id+' span').css({"transform":"","marginTop":"","borderColor":"","transtion":""});
+				})
+			})
+		}
+		
+		
 	}
+	
 })

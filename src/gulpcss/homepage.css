@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body, html, ul, li, span, i, h3 {
+body, html, ul, li, span, i, h3, p {
   padding: 0;
   margin: 0; }
 
@@ -20,10 +20,11 @@ body, html {
   font-size: 12px; }
 
 .navigate {
-  overflow: hidden;
+  height: 25px;
   width: 100%;
   background: #000; }
   .navigate .navigate-box {
+    background: #000;
     margin: 0 auto;
     width: 1090px; }
     .navigate .navigate-box a {
@@ -31,11 +32,146 @@ body, html {
     .navigate .navigate-box .left > li {
       float: left;
       margin: 5px 25px  5px  0; }
+    .navigate .navigate-box .left .code-li {
+      position: relative;
+      left: 0;
+      top: 0; }
+      .navigate .navigate-box .left .code-li .code {
+        width: 150px;
+        position: absolute;
+        left: -50px;
+        top: 30px;
+        border: 1px solid #CCCCCC;
+        background: #fefefe;
+        display: none; }
+        .navigate .navigate-box .left .code-li .code > img {
+          margin: 5px auto; }
+        .navigate .navigate-box .left .code-li .code p {
+          text-align: center;
+          color: #ff2854;
+          font-size: 17px;
+          line-height: 20px; }
     .navigate .navigate-box .right {
       float: right; }
       .navigate .navigate-box .right > li {
         float: left;
-        margin: 5px 25px 5px 0; }
+        padding: 5px 25px 0px 10px; }
+        .navigate .navigate-box .right > li span {
+          display: block;
+          width: 0;
+          height: 0;
+          border: 5px solid;
+          border-color: #9b9b9b  transparent    transparent  transparent;
+          float: right;
+          margin: 8px  5px; }
+      .navigate .navigate-box .right .man-li {
+        position: relative;
+        left: 0;
+        top: 0; }
+        .navigate .navigate-box .right .man-li .man {
+          width: 120px;
+          line-height: 30px;
+          text-align: left;
+          background: #fff;
+          padding-left: 10px;
+          z-index: 100000;
+          border: 1px solid #CCCCCC;
+          border-top: 0;
+          display: none;
+          position: absolute;
+          left: -1px;
+          top: 25px; }
+          .navigate .navigate-box .right .man-li .man .bor {
+            border-bottom: 1px solid #CCCCCC;
+            width: 110px; }
+      .navigate .navigate-box .right .man-li1 {
+        position: relative;
+        left: 0;
+        top: 0; }
+        .navigate .navigate-box .right .man-li1 .man1 {
+          width: 100px;
+          background: #fff;
+          padding-left: 10px;
+          z-index: 100000;
+          border: 1px solid #CCCCCC;
+          border-top: 0;
+          display: none;
+          position: absolute;
+          left: -1px;
+          top: 25px; }
+          .navigate .navigate-box .right .man-li1 .man1 > li {
+            line-height: 30px;
+            text-align: center;
+            position: relative;
+            left: 0;
+            top: 0; }
+            .navigate .navigate-box .right .man-li1 .man1 > li > div {
+              display: blcok;
+              width: 15px;
+              height: 15px;
+              background: url(../gulpimg/jingling.png) -4px 507px;
+              z-index: 100001;
+              border: 0;
+              margin: 8px 6px;
+              position: absolute;
+              left: 0;
+              top: 0; }
+          .navigate .navigate-box .right .man-li1 .man1 li:last-child > div {
+            background-position: -4px 473px; }
+      .navigate .navigate-box .right .man-li2 {
+        position: relative;
+        left: 0;
+        top: 0; }
+        .navigate .navigate-box .right .man-li2 .man2 {
+          width: 120px;
+          background: #fff;
+          z-index: 100000;
+          border: 1px solid #CCCCCC;
+          border-top: 0;
+          display: none;
+          position: absolute;
+          left: -1px;
+          top: 25px; }
+          .navigate .navigate-box .right .man-li2 .man2 > li {
+            line-height: 30px;
+            text-align: center; }
+      .navigate .navigate-box .right .man-li3 {
+        position: relative;
+        left: 0;
+        top: 0; }
+        .navigate .navigate-box .right .man-li3 .man3 {
+          width: 120px;
+          background: #fff;
+          z-index: 100000;
+          border: 1px solid #CCCCCC;
+          border-top: 0;
+          display: none;
+          position: absolute;
+          left: -1px;
+          top: 25px; }
+          .navigate .navigate-box .right .man-li3 .man3 > li {
+            line-height: 30px;
+            text-align: center; }
+      .navigate .navigate-box .right .man-li4 {
+        position: relative;
+        left: 0;
+        top: 0; }
+        .navigate .navigate-box .right .man-li4 .man4 {
+          width: 90px;
+          line-height: 30px;
+          text-align: left;
+          background: #fff;
+          padding-left: 10px;
+          z-index: 100000;
+          border: 1px solid #CCCCCC;
+          border-top: 0;
+          display: none;
+          position: absolute;
+          left: -18px;
+          top: 25px; }
+          .navigate .navigate-box .right .man-li4 .man4 .bor {
+            border-bottom: 1px solid #CCCCCC;
+            width: 80px; }
 
 /* header  css  LOGO search  cart 样式 */
 .logo-search {
@@ -53,13 +189,21 @@ body, html {
       float: left;
       width: 510px;
       height: 40px;
-      border: 2px solid #ff1e40;
-      border-radius: 30px;
       position: relative;
       left: 0;
       top: 0;
+      outline: none;
       margin-top: 25px; }
-      .logo-search .search-box .search > span {
+      .logo-search .search-box .search > input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: 2px solid #ff1e40;
+        border-radius: 30px;
+        position: absolute;
+        left: -1px;
+        top: -3px; }
+      .logo-search .search-box .search > a span {
         display: block;
         width: 60px;
         height: 44px;
@@ -88,9 +232,10 @@ body, html {
       line-height: 40px;
       float: left;
       padding-left: 50px;
-      color: #333;
       background: url(../gulpimg/cart.png) no-repeat 18px center;
       margin: 25px 0 0 70px; }
+      .logo-search .search-box .shopping-cart > a {
+        color: #333; }
     .logo-search .search-box .meau-bar {
       clear: both;
       width: 100%;
@@ -162,7 +307,7 @@ body, html {
                 left: 130px;
                 top: 0; }
             .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div {
-              width: 930px;
+              width: 940px;
               height: 458px;
               border: 1px solid #ff515d;
               position: absolute;
@@ -200,21 +345,24 @@ body, html {
                       line-height: 50px;
                       margin-left: 0;
                       margin-right: 30px; }
-                      .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul .two-ul > li a {
+                      .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-left .two-meau-div-left-ul .two-ul > li > a {
                         font-size: 12px;
                         color: #666666; }
               .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right {
                 width: 218px;
                 float: right;
                 margin: 9px 5px 0 11px; }
-                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right img {
+                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right a {
                   width: 104px;
                   height: 104px;
                   border: 1px solid #eaeaea;
                   float: left;
                   margin: 0  3px  2px 0; }
-                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right .png {
+                  .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right a img {
+                    width: 100%; }
+                .logo-search .search-box .meau-bar .first-li > .two-meau > li > .two-meau-div .two-meau-div-right a:last-child {
                   width: 215px;
-                  margin-top: 15px; }
+                  margin-top: 15px;
+                  border: none; }
           .logo-search .search-box .meau-bar .first-li > .two-meau > li:first-child > a {
             border-top: 1px solid #ff515d; }

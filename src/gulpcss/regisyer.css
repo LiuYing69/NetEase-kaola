@@ -20,15 +20,85 @@ body, html {
 
 .top {
   border-bottom: 1px solid #e8e8ea;
+  width: 100%; }
+  .top img {
+    width: 215px;
+    margin: 20px 135px 15px; }
+
+.center {
   width: 100%;
-  padding: 20px 135px 15px; }
+  overflow: hidden;
+  background: #f8f8f8; }
+  .center > img {
+    float: left;
+    margin: 102px 0 0 146px; }
 
-.center > img {
-  float: left;
-  margin: 102px 0 0 146px; }
+.local {
+  width: 500px;
+  height: 300px;
+  background: #e31436;
+  text-align: center;
+  margin: 30px 0 30px -250px;
+  line-height: 300px;
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  display: none; }
+  .local a {
+    font-size: 50px;
+    color: #fff; }
 
-.center > .box {
-  width: 350px;
-  height: 535px;
-  border: 1px solid #e8e8ea;
-  float: right; }
+footer ul {
+  overflow: hidden; }
+
+footer ul:nth-of-type(1) {
+  width: 1090px;
+  margin: 50px auto 15px; }
+  footer ul:nth-of-type(1) li {
+    float: left;
+    color: #666666;
+    font-size: 15px; }
+    footer ul:nth-of-type(1) li a {
+      font-size: 15px;
+      margin: 0 25px;
+      color: #666666; }
+
+footer ul:nth-of-type(2) {
+  width: 1090px;
+  margin: 0 auto 15px;
+  padding-left: 90px; }
+  footer ul:nth-of-type(2) li {
+    float: left;
+    margin-right: 40px; }
+    footer ul:nth-of-type(2) li a {
+      color: #999999; }
+  footer ul:nth-of-type(2) li:nth-of-type(3) a {
+    color: #666; }
+
+footer ul:nth-of-type(3) {
+  width: 1050px;
+  margin: 0 auto 15px;
+  padding-left: 60px; }
+  footer ul:nth-of-type(3) li {
+    float: left;
+    margin-right: 25px; }
+    footer ul:nth-of-type(3) li a {
+      color: #999; }
+  footer ul:nth-of-type(3) li:nth-of-type(1) {
+    background: url(../gulpimg/foot-1.png) no-repeat -2px;
+    padding-left: 25px; }
+  footer ul:nth-of-type(3) li:nth-of-type(2) a {
+    margin-right: 40px;
+    color: #999; }
+
+footer .footer {
+  width: 120px;
+  height: 30px;
+  margin: 0 auto 100px; }
+  footer .footer .footer-1 {
+    float: left;
+    width: 80px; }
+  footer .footer .footer-2 {
+    float: right;
+    width: 25px; }

@@ -1,0 +1,171 @@
+body, html, ul, li, span, i, h3, p {
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  display: block; }
+
+body, html {
+  width: 100%;
+  font-size: 12px; }
+
+.box {
+  width: 350px;
+  border: 1px solid #e8e8ea;
+  float: right;
+  margin: 20px 170px 0 0;
+  padding-top: 17px; }
+  .box > .box-top {
+    overflow: hidden;
+    border-bottom: 1px solid #e8e8ea; }
+    .box > .box-top > h3 {
+      line-height: 53px;
+      float: left;
+      color: #e3304e;
+      margin-left: 40px;
+      font-weight: bold;
+      font-size: 17px; }
+    .box > .box-top > p {
+      float: right;
+      line-height: 53px;
+      margin-right: 40px; }
+      .box > .box-top > p a {
+        color: #51b8f1; }
+  .box .rejingling {
+    position: relative;
+    left: 0;
+    top: 0; }
+    .box .rejingling input {
+      width: 230px;
+      height: 36px;
+      margin: 40px 0 15px 40px;
+      padding-left: 40px;
+      color: #666; }
+    .box .rejingling > span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../gulpimg/rejingling.png) -33px -33px;
+      position: absolute;
+      left: 53px;
+      top: 50px; }
+  .box .box-center {
+    width: 270px;
+    margin: 0 0 0 40px; }
+    .box .box-center img {
+      width: 100%; }
+    .box .box-center span {
+      display: block;
+      width: 268px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border: 1px solid #d5d5d5;
+      background: #f7f9fa;
+      position: relative;
+      left: 0;
+      top: 0; }
+      .box .box-center span a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .box .box-center span a span {
+          display: block;
+          height: 13px;
+          width: 15px;
+          background: url(../gulpimg/regt.png) 1px -10px;
+          margin: 13px 0 0 12px;
+          border: 0; }
+  .box .validate {
+    position: relative;
+    left: 0;
+    top: 0; }
+    .box .validate input {
+      width: 270px;
+      height: 36px;
+      margin: 15px 0 15px 40px;
+      border: 1px solid #d5d5d5; }
+    .box .validate > a {
+      display: block;
+      width: 97px;
+      height: 38px;
+      position: absolute;
+      left: 213px;
+      top: 16px;
+      border: 1px solid  #d5d5d5;
+      border-width: 0 1px;
+      line-height: 38px;
+      color: #333;
+      font-size: 15px;
+      text-align: center;
+      background: #eeeeee; }
+  .box .rejingling2 {
+    position: relative;
+    left: 0;
+    top: 0; }
+    .box .rejingling2 input {
+      width: 230px;
+      height: 36px;
+      margin: 0 0 0 40px;
+      padding-left: 40px;
+      color: #666; }
+    .box .rejingling2 > span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../gulpimg/rejingling.png) -64px -33px;
+      position: absolute;
+      left: 53px;
+      top: 10px; }
+  .box > a {
+    display: block;
+    width: 270px;
+    height: 36px;
+    background: #e31436;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 36px;
+    color: #fff;
+    position: relative;
+    left: 0;
+    top: 0; }
+    .box > a .clue {
+      width: 270px;
+      height: 30px;
+      display: none;
+      padding-left: 20px;
+      text-align: left;
+      line-height: 30px;
+      position: absolute;
+      left: 0;
+      top: -30px; }
+      .box > a .clue span {
+        width: 15px;
+        height: 15px;
+        background: url(../../src/gulpimg/clue.png) -216px -33px;
+        display: block;
+        margin: 7px 0 0 5px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+  .box .chek {
+    float: left;
+    margin-left: 40px; }
+  .box > p {
+    line-height: 17px;
+    color: #999999;
+    float: left;
+    margin-bottom: 17px; }

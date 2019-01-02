@@ -15,7 +15,11 @@ require(['jquery','cookie','two-meau'],function($,cookie,two){
 		two.jsonimg(7);
 		two.hover(".two-meau li",".two-meau-div")
 		two.hover(".first-li",".two-meau");
-		
+		two.hover1('.man-li',".man");
+		two.hover1('.man-li1',".man1");
+		two.hover1('.man-li2',".man2");
+		two.hover1('.man-li3',".man3");
+		two.hover1('.man-li4',".man4");
 	})
 	
 })
