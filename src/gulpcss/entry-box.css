@@ -22,25 +22,25 @@ body, html {
   width: 350px;
   border: 1px solid #e8e8ea;
   float: right;
-  margin: 20px 170px 0 0;
-  padding-top: 17px; }
+  margin: 20px 170px 0 0; }
   .box > .box-top {
     width: 100%;
     border-bottom: 1px solid #e8e8ea;
     overflow: hidden; }
-    .box > .box-top > h3 {
+    .box > .box-top > a {
       line-height: 53px;
       float: left;
-      color: #e3304e;
-      margin-left: 40px;
+      color: #333333;
+      margin: 0 50px;
       font-weight: bold;
-      font-size: 17px; }
-    .box > .box-top > p {
-      float: right;
-      line-height: 53px;
-      margin-right: 40px; }
-      .box > .box-top > p a {
-        color: #51b8f1; }
+      font-size: 15px; }
+    .box > .box-top a:nth-of-type(1) {
+      color: #e31436; }
+    .box > .box-top div {
+      float: left;
+      height: 20px;
+      margin-top: 16px;
+      border-left: 1px solid #dddddd; }
   .box .rejingling {
     position: relative;
     left: 0;
@@ -71,9 +71,9 @@ body, html {
         padding-left: 20px; }
         .box .rejingling > .cut a > span {
           display: block;
-          width: 20px;
-          height: 20px;
-          background: url(../gulpimg/rejingling.png) -64px -34px;
+          width: 16px;
+          height: 16px;
+          background: url(../gulpimg/rejingling.png) 0px 1px;
           position: absolute;
           left: 0;
           top: 0; }
@@ -84,7 +84,7 @@ body, html {
       background: url(../gulpimg/rejingling.png) -33px -33px;
       position: absolute;
       left: 20px;
-      top: 10px; }
+      top: 16px; }
   .box .box-center {
     width: 270px;
     margin: 0 0 0 40px; }
@@ -207,3 +207,46 @@ body, html {
     width: 100%;
     height: 40px;
     border-top: 1px solid #dddddd; }
+    .box .bottom .bottom-ul {
+      margin: 10px 0 0 40px;
+      float: left; }
+      .box .bottom .bottom-ul li {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: url(../img/jingling.png) -758px -399px;
+        float: left;
+        margin-right: 10px; }
+        .box .bottom .bottom-ul li a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+      .box .bottom .bottom-ul li:nth-of-type(2) {
+        background-position: -790px -399px; }
+      .box .bottom .bottom-ul li:nth-of-type(3) {
+        background-position: -822px -399px; }
+      .box .bottom .bottom-ul li:nth-of-type(4) {
+        background-position: -854px -399px; }
+      .box .bottom .bottom-ul li:nth-of-type(5) {
+        margin: 2px 0 0 10px;
+        width: 110px;
+        height: 20px;
+        float: right;
+        background: none;
+        line-height: 20px; }
+        .box .bottom .bottom-ul li:nth-of-type(5) a {
+          color: #e31436;
+          font-size: 15px;
+          padding-right: 25px;
+          position: relative;
+          left: 0;
+          top: 0; }
+          .box .bottom .bottom-ul li:nth-of-type(5) a span {
+            margin-top: 3px;
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 110px;
+            top: 0;
+            background: url(../img/jingling.png) -898px -405px; }

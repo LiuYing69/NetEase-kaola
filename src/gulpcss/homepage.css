@@ -275,7 +275,8 @@ body, html {
           position: absolute;
           left: 0px;
           top: 40px;
-          display: none; }
+          display: none;
+          z-index: 1000; }
           .logo-search .search-box .meau-bar .first-li > .two-meau > li {
             font-size: 14px;
             width: 165px;

@@ -5,27 +5,28 @@
 		border:1px solid #e8e8ea ;
 		float: right;
 		margin:20px 170px 0 0; 
-		padding-top:17px;
 		>.box-top{
 			width:100%;
 			border-bottom:1px solid #e8e8ea ;
 			overflow:hidden;
-			>h3{
-				line-height: 53px;
+			>a{
+				line-height:53px;
 				float: left;
-				color:#e3304e;
-				margin-left: 40px;
+				color:#333333;
+				margin:0 50px;
 				font-weight: bold;
-				font-size: 17px;
+				font-size: 15px;
 			}
-			>p{
-				float: right;
-				line-height: 53px;
-				margin-right: 40px;
-				a{
-					color:#51b8f1;
-				}
+			a:nth-of-type(1){
+				color:#e31436;
 			}
+			div{
+				float: left;
+				height:20px;
+				margin-top:16px;
+				border-left:1px solid #dddddd;
+			}
+			
 			
 		}
 		.rejingling{
@@ -54,9 +55,9 @@
 					padding-left:20px;
 					>span{
 						display:block;
-						width:20px;
-						height:20px;
-						background:url(../gulpimg/rejingling.png)  -64px -34px;
+						width:16px;
+						height:16px;
+						background:url(../gulpimg/rejingling.png)  0px 1px;
 						@include position(absolute);
 					}
 				}
@@ -66,7 +67,7 @@
 				width:20px;
 				height:20px;
 				background:url(../gulpimg/rejingling.png)  -33px -33px;
-				@include position(absolute,20px,10px);
+				@include position(absolute,20px,16px);
 			}
 		}
 		.box-center{
@@ -198,7 +199,57 @@
 			width:100%;
 			height:40px;
 			border-top:1px solid #dddddd;
+			.bottom-ul{
+				margin:10px 0 0 40px;
+				float: left;
+				li{
+					width: 25px;
+					height: 25px;
+					border-radius: 50%;
+					background:url(../img/jingling.png) -758px -399px;
+					float: left;
+					margin-right: 10px;
+					a{
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				li:nth-of-type(2){
+					background-position: -790px -399px;
+				}
+				li:nth-of-type(3){
+					background-position: -822px -399px;
+				}
+				
+				li:nth-of-type(4){
+					background-position: -854px -399px;
+				}
+				li:nth-of-type(5){
+					margin:2px 0 0 10px;
+					width:110px;
+					height: 20px;
+					float: right;
+					background: none;
+					line-height: 20px;
+					a{
+						color:#e31436;
+						font-size: 15px;
+						padding-right:25px ;
+						@include position(relative);
+						span{
+							margin-top: 3px;
+							display: block;
+							width: 15px;
+							height: 15px;
+							@include position(absolute,110px);
+							background:url(../img/jingling.png) -898px -405px;
+						}
+					}
+					
+				}
+				
+			}
 		}
-		
 	}
 	

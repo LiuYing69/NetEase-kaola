@@ -1,5 +1,6 @@
 //引用工具箱
 @import 'Dolbal';
+//@import 'register-box';
 .top{
 	border-bottom:1px solid #e8e8ea;
 	width:100%;
@@ -15,6 +16,10 @@
 	>img{
 		float: left;
 		margin:102px 0 0 146px;
+	}
+	#box1{
+		overflow: hidden;
+		float:right;
 	}
 }
 .local{

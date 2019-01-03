@@ -1,0 +1,132 @@
+body, html, ul, li, span, i, h3, p {
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  display: block; }
+
+body, html {
+  width: 100%;
+  font-size: 12px; }
+
+.banner {
+  width: 100%;
+  height: 505px;
+  position: relative;
+  left: 0;
+  top: 0; }
+  .banner .banner-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0; }
+    .banner .banner-img > li {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .banner .banner-img > li img {
+        width: 100%;
+        height: 100%; }
+  .banner > span {
+    display: block;
+    width: 30px;
+    height: 70px;
+    background: #000;
+    z-index: 1000000;
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+    opacity: 0.7; }
+    .banner > span a {
+      color: #fff; }
+  .banner span:nth-of-type(1) {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -35px; }
+  .banner span:nth-of-type(2) {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -35px; }
+  .banner .circle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 100000000;
+    width: 110px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: -55px; }
+    .banner .circle > li {
+      float: left; }
+      .banner .circle > li a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 5px; }
+    .banner .circle li:nth-of-type(1) {
+      margin-left: 5px; }
+
+.coupon {
+  width: 1000px;
+  margin: 0 auto; }
+  .coupon a:nth-of-type(1) {
+    display: block;
+    width: 100%;
+    height: 484px;
+    margin-bottom: 15px; }
+    .coupon a:nth-of-type(1) img {
+      width: 100%;
+      height: 100%; }
+  .coupon a:nth-of-type(2) {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #f6f6f6; }
+    .coupon a:nth-of-type(2) img {
+      width: 100%; }
+  .coupon a:nth-of-type(3) {
+    display: block;
+    width: 100%;
+    background: #f6f6f6; }
+    .coupon a:nth-of-type(3) img {
+      width: 100%; }
+
+.four-img {
+  width: 1000px;
+  margin: 0 auto; }
+  .four-img ul {
+    width: 100%;
+    overflow: hidden; }
+    .four-img ul li {
+      width: 225px;
+      height: 287px;
+      float: left;
+      margin: 10px; }
+      .four-img ul li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .four-img ul li a img {
+          width: 100%;
+          height: 100%; }
+    .four-img ul li:nth-of-type(1) {
+      margin-left: 18px; }
+    .four-img ul li:nth-of-type(4) {
+      margin-right: 0; }

@@ -1,0 +1,1 @@
+$('#box1').load("_register.html");

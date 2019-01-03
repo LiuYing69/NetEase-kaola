@@ -3,11 +3,12 @@ require.config({
 	"paths" : {
 		"jquery" : "jquery-1.11.3",
 		"cookie" : "jquery.cookie",
-		"two-meau" : "two-meau"
+		"two-meau" : "two-meau",
+		"home":"home"
 	}
 })
 //2.设置依赖
-require(['jquery','cookie','two-meau'],function($,cookie,two){
+require(['jquery','cookie','two-meau','home'],function($,cookie,two,home){
 	$(function(){
 		two.load("#top","_Dolbal.html");
 		two.img(".two-meau li a");
@@ -20,6 +21,8 @@ require(['jquery','cookie','two-meau'],function($,cookie,two){
 		two.hover1('.man-li2',".man2");
 		two.hover1('.man-li3',".man3");
 		two.hover1('.man-li4',".man4");
+		home.list('.four-img',5);
+		home.list2('.list1',16);
 	})
 	
 })

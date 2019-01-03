@@ -99,7 +99,7 @@ $local.click(function(){
 })
 //获取六位验证码
 function random(max,min){
-	return Math.floor(Math.random()*(max-min+1)+min);
+	return Math.floor(Math.random()*(max-min+1)+min)
 }
 console.log(random(999999,100000));
 //将字符串转为对象

@@ -32,6 +32,9 @@ body, html {
   .center > img {
     float: left;
     margin: 102px 0 0 146px; }
+  .center #box1 {
+    overflow: hidden;
+    float: right; }
 
 .local {
   width: 500px;
