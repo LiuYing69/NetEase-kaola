@@ -91,22 +91,22 @@
 						<li><a href="">女包</a></li>
 					</ul>
 				</div>
-				<div class="shopping-cart"><a href="">购物车</a></div>
+				<div class="shopping-cart"><a href="cart.html">购物车</a></div>
 				<!-- 一级菜单栏 -->
 				<ul class="meau-bar">
 					<li class="first-li">
 						<ul class="two-meau">
-							<li><a href="">美容彩妆</a>
+							<li><a href="two-home.html">美容彩妆</a>
 							</li>
-							<li><a href="">母婴儿童</a></li>
-							<li><a href="">营养保健</a></li>
-							<li><a href="">家居个护</a></li>
-							<li><a href="">数码家电</a></li>
-							<li><a href="">轻奢</a></li>
-							<li><a href="">服饰鞋靴</a></li>
-							<li><a href="">运动户外</a></li>
-							<li><a href="">手表配饰</a></li>												
-							<li><a href="">环球美食</a></li>
+							<li><a href="two-home.html">母婴儿童</a></li>
+							<li><a href="two-home.html">营养保健</a></li>
+							<li><a href="two-home.html">家居个护</a></li>
+							<li><a href="two-home.html">数码家电</a></li>
+							<li><a href="two-home.html">轻奢</a></li>
+							<li><a href="two-home.html">服饰鞋靴</a></li>
+							<li><a href="two-home.html">运动户外</a></li>
+							<li><a href="two-home.html">手表配饰</a></li>		
+							<li><a href="two-home.html">环球美食</a></li>
 						</ul>
 						<div class="thr-bor">
 							<i></i>
@@ -156,7 +156,7 @@
 										$(n[i]).each(function(i,n){
 											var $str = JSON.stringify(n);
 											$str= $str.substring(1,$str.length-1);
-											var $oli = $('<li><a href="#">'+$str+'</a></li>');
+											var $oli = $('<li><a href="two-home.html">'+$str+'</a></li>');
 											$ul2.append($oli);
 											$ul.append($ul2);
 										})
@@ -204,6 +204,11 @@
 								$(id+' span').css({"transform":"","marginTop":"","borderColor":"","transtion":""});
 							})
 						})
+					},
+					click : function(id,url){
+						$(id).click(function(){
+							localtion.href = url;
+						})
 					}
 				}
 			}
@@ -219,6 +224,7 @@
 				$fn.hover1('.man-li2',".man2");
 				$fn.hover1('.man-li3',".man3");
 				$fn.hover1('.man-li4',".man4");
+				$fn.click('.two-ul li a','two-home.html');
 		</script>
 		
 	</body>

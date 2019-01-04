@@ -5,6 +5,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const imagemin = require('gulp-imagemin');
+const babel = require('gulp-babel');
 
 gulp.task('sass',()=>{
 	gulp.src('./src/sass/*.scss')
@@ -21,6 +22,7 @@ gulp.task('img',()=>{
 })
 gulp.task("js",()=>{
 	gulp.src('./src/js/*.js')
+	//.pipe(babel())
 	.pipe(rename({"suffix":""}))
 	.pipe(uglify())
 	//.pipe(rename({"suffix":".js"}))

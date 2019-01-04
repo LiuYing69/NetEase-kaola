@@ -24,7 +24,7 @@ define(function(){
 							$(n[i]).each(function(i,n){
 								var $str = JSON.stringify(n);
 								$str= $str.substring(1,$str.length-1);
-								var $oli = $('<li><a href="#">'+$str+'</a></li>');
+								var $oli = $('<li><a href="two-home.html">'+$str+'</a></li>');
 								$ul2.append($oli);
 								$ul.append($ul2);
 							})
@@ -71,6 +71,11 @@ define(function(){
 					$(id+'>a').css({"color":""})
 					$(id+' span').css({"transform":"","marginTop":"","borderColor":"","transtion":""});
 				})
+			})
+		},
+		click : function(id,url){
+			$(id).click(function(){
+				localtion.href = url;
 			})
 		}
 		
